@@ -12,7 +12,7 @@ const  getFormData=(event)=>{
      setForm(preFormData =>{
         return{
             ...preFormData,
-            [name]: type === "checkbox" ? checked : value
+            [name]: value
             
         }
 
