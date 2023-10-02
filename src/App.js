@@ -3,7 +3,9 @@ import CapturingUserClicks from './Components/CapturingUserClicks';
 function App() {
   return (
     <div className="App">
+
       <CapturingUserClicks/>
+
     </div>
   );
 }
