@@ -7,7 +7,10 @@ function App() {
 
   return (
     <div className="App">
+
       <ItemLists list={animals} />
+
+
     </div>
   );
 }
