@@ -11,7 +11,11 @@ function App() {
   
   return (
     <div className="App">
+
      <Count count={count} onClick={createCount}/>
+
+      fasfsadf
+
     </div>
   );
 }
