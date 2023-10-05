@@ -8,7 +8,7 @@ const Form = () => {
     
 })
 const  getFormData=(event)=>{
-    const {name,value,type, checked}=event.target
+    const {name,value}=event.target
      setForm(preFormData =>{
         return{
             ...preFormData,

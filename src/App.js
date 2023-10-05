@@ -1,5 +1,5 @@
 import './App.css';
-g
+
 import Form from './Components/Form';
 
 import DisplaySquare from './Components/DisplaySquare';
