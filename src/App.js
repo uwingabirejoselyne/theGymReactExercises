@@ -1,13 +1,12 @@
 import './App.css';
-import DisplaySquare from './Components/DisplaySquare';
+
+import Form from './Components/Form';
 
 function App() {
   return (
     <div className="App">
 
-      <DisplaySquare/>
-
-
+      <Form/>
     </div>
   );
 }
