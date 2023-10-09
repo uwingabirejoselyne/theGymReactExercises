@@ -1,6 +1,10 @@
 import './App.css';
 import React from 'react';
-import { BrowserRouter, Routes, Route} from "react-router-dom"
+import { RouterProvider,
+    createBrowserRouter,
+    createRoutesFromElements,
+    Route} from "react-router-dom"
+
 import About from './Components/About'; 
 import Home from './Components/Home';
 import Vans from'./Components/Vans/Vans';
@@ -16,10 +20,9 @@ import HostVanInfo from './Components/Host/HostVanInfo';
 import HostVanPricing from './Components/Host/HostVanPricing';
 import HostVanPhotos from './Components/Host/HostVanPhotos';
 
-function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
+
+const router =createBrowserRouter(createRoutesFromElements(
+  <Route>
         <Route element ={<Layout/>}>
         <Route path="*" element={<h1>Page not found!</h1>} />
         <Route index element={<Home />} />
@@ -38,8 +41,12 @@ function App() {
           </Route>
         </Route>
         </Route>
-      </Routes>
-    </BrowserRouter>
+      </Route>
+))
+
+function App() {
+  return (
+    <RouterProvider router={router}/>
   )
 }
 
