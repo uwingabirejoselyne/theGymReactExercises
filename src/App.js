@@ -7,7 +7,7 @@ import { RouterProvider,
 
 import About from './Components/About'; 
 import Home from './Components/Home';
-import Vans from'./Components/Vans/Vans';
+import Vans,{loader as vansLoader} from'./Components/Vans/Vans';
 import VansDetail from './Components/Vans/VansDetail';
 import Layout from './Components/Layout'
 import Dashboard from './Components/Host/Dashboard';
@@ -27,7 +27,7 @@ const router =createBrowserRouter(createRoutesFromElements(
         <Route path="*" element={<h1>Page not found!</h1>} />
         <Route index element={<Home />} />
         <Route path="/about" element={<About />} /> 
-        <Route path='/vans' element={<Vans />}/>
+        <Route path='/vans' element={<Vans />} loader={vansLoader}/>
         <Route path='/vans/:id' element={<VansDetail/>}/>
         <Route path='host' element={<HostLayout/>}>
         <Route index element={<Dashboard/>}/>
