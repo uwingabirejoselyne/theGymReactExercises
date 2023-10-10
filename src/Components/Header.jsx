@@ -1,4 +1,5 @@
 import React from 'react'
+import images from '../images/User circle.png'
 import {Link, NavLink} from 'react-router-dom'
 
 const Header = () => {
@@ -17,6 +18,9 @@ const Header = () => {
 </NavLink>
 
     <NavLink to="/vans" className={({isActive}) => isActive ? activeStyle : null }>Vans</NavLink>
+    <Link to="login" className="login-link">
+   <img src={images} alt="" />
+    </Link>
     </div>
     </nav>
     </header>
