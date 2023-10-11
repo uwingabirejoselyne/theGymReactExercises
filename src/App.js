@@ -4,7 +4,7 @@ import { RouterProvider,
     createBrowserRouter,
     createRoutesFromElements,
     Route} from "react-router-dom"
-import Login,{loader as LoginLoader} from './Components/Login';
+import Login,{loader as loginLoader} from './Components/Login';
 
 import About from './Components/About'; 
 import Home from './Components/Home';
@@ -30,7 +30,7 @@ const router =createBrowserRouter(createRoutesFromElements(
     <Route
       path="login"
       element={<Login />}
-      loader={LoginLoader}
+      loader={loginLoader}
     />
     <Route
       path="vans"
